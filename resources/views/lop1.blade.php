@@ -1,0 +1,13 @@
+ {{-- mặc định trỏ đến thư mục views --}}
+ @extends('main') 
+ @section('noidung', 'Page Title')
+ @section('sidebar')
+    @parent
+
+    <p>This is appended to the master sidebar.</p>
+@endsection
+
+
+@section('content')
+    <p>This is my body content.</p>
+@endsection

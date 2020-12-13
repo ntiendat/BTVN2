@@ -1,0 +1,30 @@
+- B1: Cài đặt Composer - công cụ quản lý các dependencies:
+// download composer
+curl -sS https://getcomposer.org/installer | php
+// chuyển vào thư mục cài đặt
+sudo mv composer.phar /usr/local/bin/composer
+// cài đặt composer
+curl -sS https://getcomposer.org/installer
+thêm thư viện
+composer require tên thư viện 
+update thư viện
+composer update
+- B2: Update thư viện
+composer global require "laravel/installer=~1.1"
+
+- B3: Tạo project
+cd <dir>
+composer create-project --prefer-dist laravel/laravel <project-name>
+chmod 777 . R
+Router :
+
+Route::get('/welcome', function () {
+    echo "<h1>hello tôi là Tiến Đạt</h1>";
+});
+
+Tạo file controller
+php artisan make:controller TenController --resource
+php artisan key
+
+//phân trang dùng :: paginate() ở truy vấn  và nextpageurl() ở blade
+
